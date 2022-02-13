@@ -39,7 +39,6 @@ calendarRouter.route("/").post((req: any, res: any) => {
     const AllDay = req.body.AllDay;
     let resultJson: any = {};
 
-    console.log(UserKey);
     calendarCont.insert(
         StartDateTime,
         EndDateTime,
