@@ -32,7 +32,6 @@ const calendarController = {
         AllDay: Boolean,
         callback: Function
     ) => {
-        console.log(UserKey);
         const schedule = new (global as any).CalModel({
             StartDateTime: new Date(StartDateTime).getTime() + 3600000 * 9,
             EndDateTime: new Date(EndDateTime).getTime() + 3600000 * 9,
